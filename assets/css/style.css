@@ -8,10 +8,35 @@
 
 body {
     font-family: Sono, sans-serif;
-    font-weight: 500;
+    font-weight: 400;
+    color: #4C3319;
 }
 
-header h1 {
+header h1, h2 {
     font-family: Pacifico, sans-serif;
-    font-weight: 500;
+    letter-spacing: 35px;
+    color: #894704;
+}
+
+#logo {
+    float: left;
+    font-size: 300%;
+    margin: 15px 0 0 30px;
+}
+
+#paw {
+    float: left;
+    font-size: 200%;
+    margin: 60px 0 0 0;
+}
+
+#nav-menu {
+    font-size: 110%;
+    letter-spacing: 3px;
+}
+
+#nav-menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
 }
