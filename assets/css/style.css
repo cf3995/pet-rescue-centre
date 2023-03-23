@@ -12,10 +12,18 @@ body {
     color: #4C3319;
 }
 
-header h1, h2 {
+header h1, #paw {
     font-family: Pacifico, sans-serif;
     letter-spacing: 15px;
     color: #9E5E04;
+}
+
+h2, p {
+    font-family: Sono, sans-serif;
+}
+
+p {
+    color: #4C3319;
 }
 
 #nav-menu, #logo, #paw {
@@ -37,7 +45,6 @@ header h1, h2 {
 #nav-menu {
     font-size: 110%;
     letter-spacing: 3px;
-
 }
 
 #nav-menu li {
@@ -60,7 +67,7 @@ header h1, h2 {
 }
 
 #help-info, #rehome-choices, #events {
-    height: 300px;
+    height: 220px;
     padding-top: 0;
     background-color: silver;
     background-position: center;
@@ -95,6 +102,16 @@ header h1, h2 {
     background-color: chocolate;
     width: 33.333%;
     height: 300px;
+    float: left;
+    padding: 30px 0 0 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+footer div {
+    color: #271401;
+    width: 33.333%;
+    height: auto;
     float: left;
     padding: 30px 0 0 30px;
     text-align: center;
