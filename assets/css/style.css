@@ -67,7 +67,7 @@ p {
 }
 
 #help-info, #rehome-choices, #events {
-    height: 220px;
+    height: 320px;
     padding-top: 0;
     background-color: silver;
     background-position: center;
@@ -79,7 +79,7 @@ p {
     color: #fafafa;
     background-color: orangered;
     width: 33.333%;
-    height: 300px;
+    height: 350px;
     float: left;
     padding: 30px 0 0 30px;
     text-align: center;
@@ -90,18 +90,35 @@ p {
     color: #fafafa;
     background-color: silver;
     width: 33.333%;
-    height: 300px;
+    height: 350px;
     float: left;
     padding: 30px 0 0 30px;
     text-align: center;
     box-sizing: border-box;
 }
 
+#cute-image {
+    background: url("../images/kitten-asleep.jpg") no-repeat bottom/110%;
+
+    animation-name: cute-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cute-zoom {
+    from {
+        transform: scale(1)
+    }
+    to {
+        transform: scale(1.1)
+    }
+}
+
 #events div {
     color: #fafafa;
     background-color: chocolate;
     width: 33.333%;
-    height: 300px;
+    height: 350px;
     float: left;
     padding: 30px 0 0 30px;
     text-align: center;
