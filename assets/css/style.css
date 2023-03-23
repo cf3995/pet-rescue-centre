@@ -59,13 +59,24 @@ header h1, h2 {
     border-bottom: 1px solid #EF8C00;
 }
 
-#help-info {
+#help-info, #rehome-choices, #events {
     height: 300px;
     padding-top: 0;
     background-color: silver;
     background-position: center;
     width: 100%;
     overflow: hidden;
+}
+
+#rehome-choices div {
+    color: #fafafa;
+    background-color: orangered;
+    width: 33.333%;
+    height: 300px;
+    float: left;
+    padding: 30px 0 0 30px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 #help-info div {
@@ -76,6 +87,16 @@ header h1, h2 {
     float: left;
     padding: 30px 0 0 30px;
     text-align: center;
-    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+#events div {
+    color: #fafafa;
+    background-color: chocolate;
+    width: 33.333%;
+    height: 300px;
+    float: left;
+    padding: 30px 0 0 30px;
+    text-align: center;
     box-sizing: border-box;
 }
