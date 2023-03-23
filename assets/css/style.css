@@ -59,8 +59,27 @@ header h1, h2 {
     border-bottom: 1px solid #EF8C00;
 }
 
+#help-info {
+    height: 300px;
+}
+
+#left-help {
+    padding-top: 30px;
+    width: 33%;
+    float: left;
+    background-color: blue;
+}
+
 #kitten-asleep {
-    height: 100%;
-    width: 100%;
-    background: url("../images/kitten-asleep.jpg") no-repeat center center;
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+    background-color: green;
+}
+
+#center-help {
+    padding-top: 30px;
+    width: 33%;
+    margin: 0 auto;
+    background-color: yellow;
 }
