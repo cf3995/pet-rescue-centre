@@ -14,14 +14,14 @@ body {
 
 header h1, h2 {
     font-family: Pacifico, sans-serif;
-    letter-spacing: 35px;
+    letter-spacing: 15px;
     color: #894704;
 }
 
 #logo {
     float: left;
     font-size: 300%;
-    margin: 15px 0 0 30px;
+    margin: 15px 0 0 15px;
 }
 
 #paw {
@@ -33,10 +33,11 @@ header h1, h2 {
 #nav-menu {
     font-size: 110%;
     letter-spacing: 3px;
+    color: #271401;
 }
 
 #nav-menu li {
-    float: right;
     list-style-type: none;
-    margin-right: 30px;
+    margin: 15px 15px 0 30px;
+    text-align: right;
 }
