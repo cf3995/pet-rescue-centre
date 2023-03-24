@@ -16,6 +16,7 @@ header h1, #paw {
     font-family: Pacifico, sans-serif;
     letter-spacing: 15px;
     color: #9E5E04;
+    font-weight: 400;
 }
 
 h2, p {
@@ -23,7 +24,8 @@ h2, p {
 }
 
 p {
-    color: white;
+    color: silver;
+    font-weight: 400;
 }
 
 #nav-menu, #logo, #paw {
@@ -40,6 +42,10 @@ p {
     float: left;
     font-size: 200%;
     margin: 60px 0 0 0;
+}
+
+header, footer div {
+    background-color: whitesmoke;
 }
 
 #nav-menu {
@@ -77,7 +83,7 @@ p {
 
 #rehome-choices div {
     color: #fafafa;
-    background-color: silver;
+    background-color: whitesmoke;
     width: 33.333%;
     height: 350px;
     float: left;
@@ -127,6 +133,7 @@ p {
 
 footer div {
     color: #271401;
+    background-color: whitesmoke;
     width: 33.333%;
     height: auto;
     float: left;
