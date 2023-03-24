@@ -75,21 +75,43 @@ header, footer div {
 #help-info, #rehome-choices, #events {
     height: 320px;
     padding-top: 0;
-    background-color: silver;
     background-position: center;
     width: 100%;
     overflow: hidden;
 }
 
 #rehome-choices div {
-    color: #fafafa;
+    color: #271401;
     background-color: whitesmoke;
     width: 33.333%;
-    height: 350px;
     float: left;
-    padding: 30px 0 0 30px;
-    text-align: center;
+    padding: 30px 10% 0 30px;
     box-sizing: border-box;
+    height: 300px;
+}
+
+#rehome-choices a, h2, p {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 20px;
+}
+
+#dog-rehome {
+    background: url("../images/dog-big-eyes.jpg") no-repeat top/110%;
+    background-size: cover;
+    border: 2px hidden;
+}
+
+
+#cat-rehome {
+    background: url('../images/cat-looks-up.jpg') no-repeat center/105%;
+    background-size: cover;
+    border: 2px hidden;
+}
+
+#other-animals {
+    background: url('../images/guinea-big-orange.jpg') no-repeat bottom/110%;
+    border: 2px solid #271401;
 }
 
 #help-info div {
@@ -105,20 +127,21 @@ header, footer div {
 
 #cute-image {
     background: url("../images/kitten-asleep.jpg") no-repeat bottom/110%;
+    border: 2px solid #271401;
 
-    animation-name: cute-zoom;
+    /*animation-name: cute-zoom;
     animation-duration: 5s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards;*/
 }
 
-@keyframes cute-zoom {
+/*@keyframes cute-zoom {
     from {
         transform: scale(1.0)
     }
     to {
         transform: scale(1.1)
     }
-}
+}*/
 
 #events div {
     color: #fafafa;
