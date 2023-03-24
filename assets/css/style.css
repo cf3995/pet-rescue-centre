@@ -12,9 +12,13 @@ body {
     color: #4C3319;
 }
 
+header {
+    height: 220px;
+}
+
 header h1, #paw {
     font-family: Pacifico, sans-serif;
-    letter-spacing: 15px;
+    letter-spacing: 30px;
     color: #9E5E04;
     font-weight: 400;
 }
@@ -30,19 +34,18 @@ p {
 }
 
 #nav-menu, #logo, #paw {
-    line-height: 30px;
+    line-height: 60px;
 }
 
 #logo {
     float: left;
-    font-size: 300%;
-    margin: 10px;
+    font-size: 400%;
+    margin: 20px;
 }
 
 #paw {
-    float: left;
-    font-size: 200%;
-    margin: 30px;
+    font-size: 300%;
+    margin: 20px;
 }
 
 header, footer div {
@@ -85,18 +88,34 @@ header, footer div {
 
 #rehome-choices div {
     color: #271401;
-    background-color: #4C3319;
     width: 33.333%;
     float: left;
     padding: 30px 10% 0 10px;
     box-sizing: border-box;
     height: 320px;
+    overflow: hidden;
 }
 
 #rehome-choices a {
+    height: 240px;
+    width: 160px;
     text-decoration: none;
     color: whitesmoke;
     background-color: #EF8C00;
+    display: inline-block;
+    padding-right: 60px;
+    margin-right: 60px;
+    text-align: left;
+}
+
+#rehome-choices > h2 > p {
+    height: 240px;
+    width: 160px;
+    display: inline-block;
+    padding-right: 60px;
+    margin-right: 60px;
+    text-align: left;
+    font-size: 100%;
 }
 
 
@@ -104,17 +123,21 @@ header, footer div {
     background: url("../images/dog-big-eyes.jpg") no-repeat top/110%;
     background-size: cover;
     border: 2px hidden;
+    overflow: hidden;
 }
 
 #cat-rehome {
     background: url('../images/cat-looks-up.jpg') no-repeat center/105%;
     background-size: cover;
     border: 2px hidden;
+    overflow: hidden;
 }
 
 #other-rehome {
     background: url('../images/guinea-big-orange.jpg') no-repeat bottom/110%;
+    background-size: cover;
     border: 2px hidden;
+    overflow: hidden;
 }
 
 #top-space div {
@@ -172,9 +195,9 @@ footer div {
     color: #271401;
     background-color: whitesmoke;
     width: 33.333%;
-    height: 350px;
+    height: 220px;
     float: left;
-    padding: 30px 0 0 30px;
+    padding: 30px 30px;
     text-align: center;
     box-sizing: border-box;
 }
