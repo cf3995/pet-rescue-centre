@@ -170,6 +170,39 @@ header, footer div {
     animation-fill-mode: forwards;
 }
 
+.card-staff {
+    background-color: red;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #4C3319;
+    width: 33%;
+    height: 150px;
+    clear: both;
+    box-sizing: border-box;
+}
+
+.card-resident {
+    background-color: #EF8C00;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #4C3319;
+    width: 33%;
+    height: 150px;
+    clear: both;
+    box-sizing: border-box;
+}
+
+.card-other {
+    background-color: green;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #4C3319;
+    width: 33%;
+    height: 150px;
+    clear: both;
+    box-sizing: border-box;
+}
+
 @keyframes cute-zoom {
     from {
         transform: scale(1.0)
