@@ -188,7 +188,7 @@ header, footer div {
 }
 
 #events div {
-    color: #fafafa;
+    color: whitesmoke;
     background-color: chocolate;
     width: 20%;
     height: 350px;
@@ -207,27 +207,33 @@ header, footer div {
     padding: 0 10px;
 }
 
-.row {
+.pet-column {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+}
+
+.row, .pet-row {
     margin: 0 -5px;
     height: 450px;
     background-color: whitesmoke;
 }
 
-.row:after {
+.row:after, .pet-row:after {
     content: "";
     display: table;
     clear: both;
 }
 
 @media screen and (max-width: 600px) {
-    .column {
+    .column, .pet-column {
         width: 100%;
         display: block;
         margin-bottom: 20px;
     }
 }
 
-.card-photo {
+.card-photo, .pet-photo {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
@@ -237,7 +243,7 @@ header, footer div {
 #manager {
     background-image: url("../images/stephanie-stepwell.jpg");
     height: 250px;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -245,7 +251,7 @@ header, footer div {
 #receptionist {
     background-image: url("../images/derek-daley.jpg");
     height: 250px;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -263,24 +269,62 @@ header, footer div {
     height: 200px;
     padding: 16px;
     text-align: center;
-    color: #fafafa;
+    color: whitesmoke;
     background-color: #4C3319;
     overflow: auto;
 }
 
-#animals {
-    background-color: #EF8C00;
-    height: 320px;
-    padding-top: 0;
-    background-position: center;
-    width: 100%;
-    clear: both;
+.pet-blurb {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 300px;
+    padding: 16px;
+    text-align: center;
+    background-color: chocolate;
+    color: whitesmoke;
+    overflow: auto;
 }
 
+
 /* Long term resident section styling */
+#terry {
+    background-image: url("../images/terry.jpg");
+    height: 250px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+#boyle {
+    background-image: url("../images/boyle.jpg");
+    height: 250px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+#santiago {
+    background-image: url("../images/santiago.jpg");
+    height: 250px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+#holt {
+    background-image: url("../images/holt.jpg");
+    height: 250px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#peralta {
+    background-image: url("../images/peralta.jpg");
+    height: 250px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* Footer styling */
 
