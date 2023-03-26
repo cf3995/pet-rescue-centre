@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     border: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -170,7 +171,7 @@ header, footer div {
     animation-fill-mode: forwards;
 }
 
-#top-staff {
+/*#top-staff {
     background-color: #4C3319;
     height: 320px;
     padding-top: 0;
@@ -197,6 +198,7 @@ header, footer div {
     height: 100px;
     width: 100px;
     overflow: hidden;
+    text-align: left;
 }
 
 #manager {
@@ -213,6 +215,38 @@ vet {
 
 resident-cat {
 
+}
+*/
+
+.column {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
 }
 
 #animals {
