@@ -170,22 +170,49 @@ header, footer div {
     animation-fill-mode: forwards;
 }
 
-#owners {
+#top-staff {
     background-color: #4C3319;
     height: 320px;
     padding-top: 0;
-    background-position: center;
+    float: left;
     width: 100%;
     overflow: hidden;
 }
 
-#staff {
+#card-staff {
     background-color: #9E5E04;
     height: 320px;
-    padding-top: 0;
+    padding: 5px 5px;
     background-position: center;
     width: 100%;
+    overflow: auto;
+    text-align: left;
+}
+
+#owner {
+    background: url("../images/guinea-big-orange.jpg") no-repeat;
+    background-position: center;
+    float: right;
+    border: 2px solid #4C3319;
+    height: 100px;
+    width: 100px;
     overflow: hidden;
+}
+
+#manager {
+    
+}
+
+#receptionist {
+
+}
+
+vet {
+
+}
+
+resident-cat {
+
 }
 
 #animals {
@@ -194,7 +221,7 @@ header, footer div {
     padding-top: 0;
     background-position: center;
     width: 100%;
-    overflow: hidden;
+    clear: both;
 }
 
 .card-staff {
@@ -202,10 +229,14 @@ header, footer div {
     display: inline-block;
     text-align: center;
     border: 2px solid #4C3319;
-    width: 33%;
-    height: 150px;
+    width: 300px;
+    height: 300px;
+    padding: 5px 5px;
+    margin: 5px 5px;
     clear: both;
     box-sizing: border-box;
+    display: list-item inline;
+    overflow: hidden;
 }
 
 .card-resident {
