@@ -170,6 +170,33 @@ header, footer div {
     animation-fill-mode: forwards;
 }
 
+#owners {
+    background-color: #4C3319;
+    height: 320px;
+    padding-top: 0;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#staff {
+    background-color: #9E5E04;
+    height: 320px;
+    padding-top: 0;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#animals {
+    background-color: #EF8C00;
+    height: 320px;
+    padding-top: 0;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+}
+
 .card-staff {
     background-color: red;
     display: inline-block;
