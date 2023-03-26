@@ -1,5 +1,7 @@
+/* import Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sono&display=swap');
 
+/* Set general rules for all sections */
 * {
     margin: 0;
     padding: 0;
@@ -53,6 +55,8 @@ header, footer div {
     background-color: whitesmoke;
 }
 
+/* Styling for navigation menu */
+
 #nav-menu {
     font-size: 110%;
     letter-spacing: 3px;
@@ -70,6 +74,8 @@ header, footer div {
     color: #271401;
 }
 
+/* Styling for hovering over navigation menu options with mouse */
+
 #nav-menu a:hover {
     border-bottom: 1px solid #EF8C00;
 }
@@ -78,6 +84,7 @@ header, footer div {
     border-bottom: 1px solid #EF8C00;
 }
 
+/* Styling for index page */
 
 #help-info, #rehome-choices, #events {
     height: 320px;
@@ -171,142 +178,6 @@ header, footer div {
     animation-fill-mode: forwards;
 }
 
-/*#top-staff {
-    background-color: #4C3319;
-    height: 320px;
-    padding-top: 0;
-    float: left;
-    width: 100%;
-    overflow: hidden;
-}
-
-#card-staff {
-    background-color: #9E5E04;
-    height: 320px;
-    padding: 5px 5px;
-    background-position: center;
-    width: 100%;
-    overflow: auto;
-    text-align: left;
-}
-
-#owner {
-    background: url("../images/guinea-big-orange.jpg") no-repeat;
-    background-position: center;
-    float: right;
-    border: 2px solid #4C3319;
-    height: 100px;
-    width: 100px;
-    overflow: hidden;
-    text-align: left;
-}
-
-#manager {
-    
-}
-
-#receptionist {
-
-}
-
-vet {
-
-}
-
-resident-cat {
-
-}
-*/
-
-.column {
-    float: left;
-    width: 33%;
-    padding: 0 10px;
-}
-
-.row {
-    margin: 0 -5px;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
-}
-
-.card-photo {
-    background-image: url("../images/guinea-big-orange.jpg");
-    height: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-}
-
-.card-blurb {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-}
-
-#animals {
-    background-color: #EF8C00;
-    height: 320px;
-    padding-top: 0;
-    background-position: center;
-    width: 100%;
-    clear: both;
-}
-
-.card-staff {
-    background-color: red;
-    display: inline-block;
-    text-align: center;
-    border: 2px solid #4C3319;
-    width: 300px;
-    height: 300px;
-    padding: 5px 5px;
-    margin: 5px 5px;
-    clear: both;
-    box-sizing: border-box;
-    display: list-item inline;
-    overflow: hidden;
-}
-
-.card-resident {
-    background-color: #EF8C00;
-    display: inline-block;
-    text-align: center;
-    border: 2px solid #4C3319;
-    width: 33%;
-    height: 150px;
-    clear: both;
-    box-sizing: border-box;
-}
-
-.card-other {
-    background-color: green;
-    display: inline-block;
-    text-align: center;
-    border: 2px solid #4C3319;
-    width: 33%;
-    height: 150px;
-    clear: both;
-    box-sizing: border-box;
-}
-
 @keyframes cute-zoom {
     from {
         transform: scale(1.0)
@@ -327,6 +198,91 @@ resident-cat {
     border: 2px solid whitesmoke;
     box-sizing: border-box;
 }
+
+/* Styling for team page - staff cards */
+
+.column {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+}
+
+.row {
+    margin: 0 -5px;
+    height: 450px;
+    background-color: whitesmoke;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.card-photo {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: chocolate;
+}
+
+#manager {
+    background-image: url("../images/guinea-big-orange.jpg");
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#receptionist {
+    background-image: url("../images/guinea-big-orange.jpg");
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#vet {
+    background-image: url("../images/guinea-big-orange.jpg");
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-blurb {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 200px;
+    padding: 16px;
+    text-align: center;
+    color: #fafafa;
+    background-color: #4C3319;
+    overflow: auto;
+}
+
+#animals {
+    background-color: #EF8C00;
+    height: 320px;
+    padding-top: 0;
+    background-position: center;
+    width: 100%;
+    clear: both;
+}
+
+/* Long term resident section styling */
+
+
+
+
+/* Footer styling */
 
 footer div {
     color: #271401;
