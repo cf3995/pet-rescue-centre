@@ -216,7 +216,7 @@ header, footer div {
 }
 
 @media screen and (max-width: 600px) {
-    .column, .pet-column, .index-column, .info-row {
+    .column, .pet-column, .index-column, .info-column {
         width: 100%;
         display: block;
         margin-bottom: 20px;
