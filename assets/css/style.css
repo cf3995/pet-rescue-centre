@@ -140,7 +140,7 @@ header, footer div {
     height: 80px;
 }
 
-#help-info div {
+/* #help-info div {
     color: #fafafa;
     background-color: #4C3319;
     width: 33.333%;
@@ -151,22 +151,12 @@ header, footer div {
     text-align: left;
 }
 
+*/
+
 #cute-image {
-    background: url("../images/kitten-asleep.jpg") no-repeat bottom/110%;
-    border: 2px solid hidden;
-
-    animation-name: cute-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes cute-zoom {
-    from {
-        transform: scale(1.0)
-    }
-    to {
-        transform: scale(1.1)
-    }
+    background: url("../images/kitten-asleep.jpg") no-repeat center;
+    background-size: cover;
+    background-color: #4C3319;
 }
 
 #events div {
@@ -207,20 +197,26 @@ header, footer div {
     padding: 0 10px;
 }
 
-.row, .pet-row, .index-row {
+.info-column {
+    float: left;
+    width: 33.33%;
+    padding: 0;
+}
+
+.row, .pet-row, .index-row, .info-row {
     margin: 0 -5px;
     height: 450px;
     background-color: whitesmoke;
 }
 
-.row:after, .pet-row:after, .index-row:after {
+.row:after, .pet-row:after, .index-row:after, .info-row:after {
     content: "";
     display: table;
     clear: both;
 }
 
 @media screen and (max-width: 600px) {
-    .column, .pet-column, .index-column {
+    .column, .pet-column, .index-column, .info-row {
         width: 100%;
         display: block;
         margin-bottom: 20px;
@@ -232,6 +228,16 @@ header, footer div {
     padding: 16px;
     text-align: center;
     background-color: chocolate;
+}
+
+.info-block {
+    padding: 0;
+    height: 350px;
+    text-align: center;
+    text-overflow: none;
+    background-color: #4C3319;
+    color: whitesmoke;
+    overflow: auto;
 }
 
 #dog-rehome {
