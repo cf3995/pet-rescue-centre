@@ -159,7 +159,7 @@ header, footer div {
     background-color: #4C3319;
 }
 
-#events div {
+/* #events div {
     color: whitesmoke;
     background-color: chocolate;
     width: 20%;
@@ -170,6 +170,7 @@ header, footer div {
     border: 2px solid whitesmoke;
     box-sizing: border-box;
 }
+*/
 
 /* Styling for cards */
 
@@ -203,20 +204,32 @@ header, footer div {
     padding: 0;
 }
 
-.row, .pet-row, .index-row, .info-row {
+.events-column {
+    float: left;
+    width: 18%;
+    padding: 0 10px;
+}
+
+.events-column-banner {
+    float: left;
+    width: 2.5%;
+    padding-right: 10px;
+}
+
+.row, .pet-row, .index-row, .info-row, .events-row {
     margin: 0 -5px;
     height: 450px;
     background-color: whitesmoke;
 }
 
-.row:after, .pet-row:after, .index-row:after, .info-row:after {
+.row:after, .pet-row:after, .index-row:after, .info-row:after, .events-row:after {
     content: "";
     display: table;
     clear: both;
 }
 
 @media screen and (max-width: 600px) {
-    .column, .pet-column, .index-column, .info-column {
+    .column, .pet-column, .index-column, .info-column, .events-column, .events-column-banner {
         width: 100%;
         display: block;
         margin-bottom: 20px;
@@ -238,6 +251,30 @@ header, footer div {
     background-color: #4C3319;
     color: whitesmoke;
     overflow: auto;
+}
+
+.event-normal {
+    padding: 0;
+    height: 350px;
+    text-align: left;
+    text-overflow: none;
+    font-size: small;
+    background-color: chocolate;
+    color: whitesmoke;
+    overflow: auto;
+}
+
+.vet-banner {
+    padding: 0;
+    height: 300px;
+    margin-left: -10px;
+    text-align: left;
+    text-overflow: none;
+    background-color: #4C3319;
+    color: whitesmoke;
+    font-size: smaller;
+    overflow: auto;
+    writing-mode: vertical-rl;
 }
 
 #dog-rehome {
