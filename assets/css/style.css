@@ -86,6 +86,8 @@ header, footer div {
 
 /* Styling for index page */
 
+/*
+
 #help-info, #rehome-choices, #events {
     height: 320px;
     padding-top: 0;
@@ -126,27 +128,7 @@ header, footer div {
     font-size: 100%;
 }
 
-
-#dog-rehome {
-    background: url("../images/dog-big-eyes.jpg") no-repeat top/110%;
-    background-size: cover;
-    border: 2px hidden;
-    overflow: hidden;
-}
-
-#cat-rehome {
-    background: url('../images/cat-looks-up.jpg') no-repeat center/105%;
-    background-size: cover;
-    border: 2px hidden;
-    overflow: hidden;
-}
-
-#other-rehome {
-    background: url('../images/guinea-big-orange.jpg') no-repeat bottom/110%;
-    background-size: cover;
-    border: 2px hidden;
-    overflow: hidden;
-}
+*/
 
 #top-space div {
     background-color: whitesmoke;
@@ -213,6 +195,12 @@ header, footer div {
     padding: 0 10px;
 }
 
+.rehome-choices {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+}
+
 .index-column {
     float: left;
     width: 33%;
@@ -239,11 +227,29 @@ header, footer div {
     }
 }
 
-.card-photo, .pet-photo {
+.card-photo, .pet-photo, .rehome-photo {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
     background-color: chocolate;
+}
+
+#dog-rehome {
+    background: url("../images/dog-big-eyes.jpg") no-repeat top/110%;
+    height: 250px;
+    background-size: cover;
+}
+
+#cat-rehome {
+    background: url('../images/cat-looks-up.jpg') no-repeat center/105%;
+    height: 250px;
+    background-size: cover;
+}
+
+#other-rehome {
+    background: url('../images/guinea-big-orange.jpg') no-repeat bottom/110%;
+    height: 250px;
+    background-size: cover;
 }
 
 #manager {
@@ -283,6 +289,16 @@ header, footer div {
 .pet-blurb {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     height: 300px;
+    padding: 16px;
+    text-align: center;
+    background-color: chocolate;
+    color: whitesmoke;
+    overflow: auto;
+}
+
+.rehome-blurb {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 200px;
     padding: 16px;
     text-align: center;
     background-color: chocolate;
