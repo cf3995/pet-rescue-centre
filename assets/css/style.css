@@ -16,28 +16,41 @@ body {
 }
 
 header {
-    width: 100%;
-    justify-content: space-evenly;
     font-family: Pacifico, sans-serif;
-    letter-spacing: 30px;
     font-weight: 400;
     background-color: whitesmoke;
+    color: #4C3319;
 }
 
 header > a {
-    display: flex;
-    justify-content: center;
-    color: #4C3319;
-    line-height: 3;
+    line-height: 2;
+    justify-content: left;
+    letter-spacing: 20px;
 }
 
-header > nav {
-    width: 100%;
+header a h1 {
+    margin: 0 2em;
+}
+
+em {
+    font-style: normal;
+    font-size: 120%;
+    text-transform: uppercase;
+}
+
+#nav-menu {
     display: flex;
     flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    flex-grow: 1;
     justify-content: right;
-    color: #4C3319;
-    line-height: 2;
+    text-align: right;
+    letter-spacing: 5px;
+}
+
+#nav-menu li {
+    margin: 2em;
 }
 
 /*
@@ -81,10 +94,6 @@ p {
 }
 */
 
-header, footer div {
-    background-color: whitesmoke;
-}
-
 #flex-column {
     display: flex;
     flex-direction: column;
@@ -109,7 +118,7 @@ header, footer div {
 
 /* Styling for navigation menu */
 
-#nav-menu {
+/* #nav-menu {
     font-size: 110%;
     letter-spacing: 3px;
     float: right;
@@ -125,6 +134,8 @@ header, footer div {
     text-decoration: none;
     color: #271401;
 }
+
+*/
 
 /* Styling for hovering over navigation menu options with mouse */
 
