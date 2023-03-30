@@ -206,14 +206,18 @@ header, footer div {
 
 .events-column {
     float: left;
-    width: 18%;
+    width: 20%;
     padding: 0 10px;
+    display: flex;
+    height: 450px;
+    align-items: stretch;
+    overflow: hidden;
 }
 
 .events-column-banner {
-    float: left;
+    float: right;
     width: 2.5%;
-    padding-right: 10px;
+    padding-left: 2px;
 }
 
 .row, .pet-row, .index-row, .info-row, .events-row {
@@ -254,14 +258,12 @@ header, footer div {
 }
 
 .event-normal {
-    padding: 0;
-    height: 350px;
     text-align: left;
     text-overflow: none;
     font-size: small;
     background-color: chocolate;
     color: whitesmoke;
-    overflow: auto;
+    line-height: 2rem;
 }
 
 .vet-banner {
