@@ -55,6 +55,28 @@ header, footer div {
     background-color: whitesmoke;
 }
 
+#flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    background-color: whitesmoke;
+}
+
+#flex-column > div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.index-column {
+    flex-grow: 1;
+}
+
+#help-info {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /* Styling for navigation menu */
 
 #nav-menu {
@@ -130,7 +152,7 @@ header, footer div {
 
 */
 
-#top-space div {
+/* #top-space div {
     background-color: whitesmoke;
     height: 80px;
 }
@@ -139,6 +161,8 @@ header, footer div {
     background-color: whitesmoke;
     height: 80px;
 }
+
+*/
 
 /* #help-info div {
     color: #fafafa;
