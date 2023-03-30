@@ -204,25 +204,8 @@ header, footer div {
     padding: 0;
 }
 
-.events-column {
-    float: left;
-    width: 20%;
-    padding: 0 10px;
-    display: flex;
-    height: 450px;
-    align-items: stretch;
-    overflow: hidden;
-}
-
-.events-column-banner {
-    float: right;
-    width: 2.5%;
-    padding-left: 2px;
-}
-
 .row, .pet-row, .index-row, .info-row, .events-row {
     margin: 0 -5px;
-    height: 450px;
     background-color: whitesmoke;
 }
 
@@ -260,23 +243,36 @@ header, footer div {
 .event-normal {
     text-align: left;
     text-overflow: none;
+    width: 100%;
     font-size: small;
     background-color: chocolate;
     color: whitesmoke;
-    line-height: 2rem;
+    line-height: 1rem;
 }
 
-.vet-banner {
-    padding: 0;
-    height: 300px;
-    margin-left: -10px;
-    text-align: left;
-    text-overflow: none;
+.events-column {
+    float: left;
+    padding: 0 10px;
+    display: flex;
+    width: 20%;
+    flex-direction: inline-row;
+    height: 450px;
+    background-color: whitesmoke;
+}
+
+.events-column-banner {
+    height: 450px;
+    padding-bottom: 60px;
+    text-align: right;
     background-color: #4C3319;
     color: whitesmoke;
     font-size: smaller;
-    overflow: auto;
+    overflow: hidden;
     writing-mode: vertical-rl;
+}
+
+.vet-banner {
+    width: 20px;
 }
 
 #dog-rehome {
