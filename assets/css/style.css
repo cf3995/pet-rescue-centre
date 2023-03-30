@@ -20,9 +20,15 @@ header {
     justify-content: space-evenly;
     font-family: Pacifico, sans-serif;
     letter-spacing: 30px;
-    color: #9E5E04;
     font-weight: 400;
-    flex-grow: 2;
+    background-color: whitesmoke;
+}
+
+header > a {
+    display: flex;
+    justify-content: center;
+    color: #4C3319;
+    line-height: 3;
 }
 
 header > nav {
@@ -30,6 +36,8 @@ header > nav {
     display: flex;
     flex-direction: row;
     justify-content: right;
+    color: #4C3319;
+    line-height: 2;
 }
 
 /*
@@ -43,13 +51,19 @@ header h1, #paw {
 
 h2, p {
     font-family: Sono, sans-serif;
-    margin: 20px 20px;
+    margin: 10px 10px;
+    text-align: center;
+    line-height: 2;
+    font-size: 12px;
+    font-size: 1.2vw;
 }
 
 p {
     color: whitesmoke;
     font-weight: 400;
+    margin: 0 5px;
 }
+
 /*
 #nav-menu, #logo, #paw {
     line-height: 30px;
