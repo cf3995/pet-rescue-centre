@@ -337,22 +337,24 @@ footer div {
     font-size: small;
     background-color: chocolate;
     color: whitesmoke;
-    line-height: 1rem;
+    line-height: 1;
 }
 
 .events-column {
     float: left;
-    padding: 0 10px;
+    padding: 0 5px;
     display: flex;
     width: 20%;
     flex-direction: inline-row;
-    height: 450px;
+    height: 350px;
     background-color: whitesmoke;
+    font-size-adjust: auto;
+    font-size: small;
 }
 
 .events-column-banner {
-    height: 450px;
-    padding-bottom: 60px;
+    height: 350px;
+    padding-bottom: 5px;
     text-align: right;
     background-color: #4C3319;
     color: whitesmoke;
@@ -367,25 +369,25 @@ footer div {
 
 #dog-rehome {
     background: url("../images/dog-big-eyes.jpg") no-repeat top/110%;
-    height: 250px;
+    height: 200px;
     background-size: cover;
 }
 
 #cat-rehome {
     background: url('../images/cat-looks-up.jpg') no-repeat center/105%;
-    height: 250px;
+    height: 200px;
     background-size: cover;
 }
 
 #other-rehome {
     background: url('../images/guinea-big-orange.jpg') no-repeat bottom/110%;
-    height: 250px;
+    height: 200px;
     background-size: cover;
 }
 
 #manager {
     background-image: url("../images/stephanie-stepwell.jpg");
-    height: 250px;
+    height: 200px;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -393,7 +395,7 @@ footer div {
 
 #receptionist {
     background-image: url("../images/derek-daley.jpg");
-    height: 250px;
+    height: 200px;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -401,7 +403,7 @@ footer div {
 
 #vet {
     background-image: url("../images/teresa-tully.jpg");
-    height: 250px;
+    height: 200px;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100%;
