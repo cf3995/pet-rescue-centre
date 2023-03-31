@@ -12,7 +12,7 @@
 body {
     font-family: Sono, sans-serif;
     font-weight: 400;
-    color: #4C3319;
+    background-color: #4C3319;
 }
 
 header {
@@ -127,23 +127,45 @@ p {
 }
 */
 
+#top-section {
+    background-color: #4C3319;
+    margin-bottom: 8px;
+    line-height: 2;
+    color: whitesmoke;
+    text-align: center;
+    letter-spacing: 20px;
+}
+
 #rehome-section {
-    background-color: whitesmoke;
+    background-color: #4C3319;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 0 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    clear: both;
 }
 
-/*
+#rehome-section {
+    color: whitesmoke;
+    text-decoration: none;
+}
 
 .rehome-box {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    border-style: 2px solid;
 }
+
+.rehome-blurb {
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    background-color: #4C3319;
+    text-size-adjust: auto;
+    text-overflow: hidden;
+    margin-top: 5px;
+}
+
 
 /* .rehome-photo {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -151,31 +173,38 @@ p {
 }
 */
 
-.rehome-box {
+/*.rehome-box {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
-
+*/
 #dog-rehome {
-    height: 200px;
-    width: auto;
+    height: 300px;
+    width: 300px;
     background: url("../images/dog-big-eyes.jpg") no-repeat center;
     background-size: cover;
+    image-rendering: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 
 #cat-rehome {
-    height: 200px;
-    width: auto;
+    height: 300px;
+    width: 300px;
     background: url('../images/cat-looks-up.jpg') no-repeat;
     background-size: cover;
+    image-rendering: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 
 #other-rehome {
-    height: 200px;
-    width: auto;
+    height: 300px;
+    width: 300px;
     background: url('../images/guinea-big-orange.jpg') no-repeat;
     background-size: cover;
+    image-rendering: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 
 
@@ -471,17 +500,7 @@ footer div {
     overflow: auto;
 }
 
-/*.rehome-blurb {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    height: 200px;
-    padding: 16px;
-    font-size: 16px;
-    text-align: center;
-    background-color: chocolate;
-    color: whitesmoke;
-    text-size-adjust: auto;
-}
-*/
+
 
 /* Long term resident section styling */
 #terry {
@@ -535,7 +554,7 @@ footer div {
     box-sizing: border-box;
 }
 
-footer p, a, li {
+footer p {
     color: #271401;
     text-decoration: none;
     list-style-type: none;
