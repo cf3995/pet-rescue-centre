@@ -63,11 +63,6 @@ em {
     letter-spacing: 8px;
 }
 
-#top-section {
-    background-color: whitesmoke;
-    color: #392613
-}
-
 #info-section {
     display: flex;
     flex-direction: row;
@@ -93,6 +88,22 @@ em {
     image-rendering: auto;
     opacity: 0.5;
     margin: 0;
+}
+
+#events {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    gap: 2px;
+}
+
+.events-column {
+    flex: 1;
+    overflow-wrap: break-word;
+    padding: 20px 20px;
+    background-color: #86592d;
+    border-bottom: 2px solid whitesmoke;
 }
 
 #rehome-section {
