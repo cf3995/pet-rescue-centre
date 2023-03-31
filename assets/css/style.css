@@ -25,6 +25,7 @@ header > a {
     line-height: 2;
     justify-content: left;
     letter-spacing: 20px;
+    font-size: 3vw;
 }
 
 header a h1 {
@@ -35,12 +36,12 @@ header a h1 {
 header p {
     font-family: Sono, sans-serif;
     color: #4C3319;
-    font-size: 
+    font-size: 2vw;
 }
 
 em {
     font-style: normal;
-    font-size: 120%;
+    font-size: 4vw;
     text-transform: uppercase;
 }
 
@@ -50,10 +51,11 @@ em {
     flex-direction: row;
     text-decoration: none;
     list-style-type: none;
-    flex-grow: 1;
     justify-content: right;
     text-align: right;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
+    font-size: 1vw;
+    text-size-adjust: auto;
     
 }
 
@@ -431,8 +433,9 @@ footer div {
 
 .rehome-blurb {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    height: 100px;
-    padding: 8px;
+    height: 200px;
+    padding: 16px;
+    font-size: 16px;
     text-align: center;
     background-color: chocolate;
     color: whitesmoke;
