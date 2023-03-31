@@ -16,16 +16,28 @@ body {
 }
 
 header {
+    font-family: Pacifico, sans-serif;
     font-weight: 400;
     background-color: whitesmoke;
     color: #4C3319;
+    display: flex;
+    justify-content: space-between;
 }
 
+#nav-menu a:hover {
+    border-bottom: 1px solid #EF8C00;
+}
+
+.active {
+    border-bottom: 1px solid #EF8C00;
+}
+
+/*
 header > a {
     line-height: 2;
     justify-content: left;
     letter-spacing: 20px;
-    font-size: 3vw;
+    font-size: 1vw;
 }
 
 header a h1 {
@@ -36,12 +48,12 @@ header a h1 {
 header p {
     font-family: Sono, sans-serif;
     color: #4C3319;
-    font-size: 2vw;
+    font-size: 1vw;
 }
 
 em {
     font-style: normal;
-    font-size: 4vw;
+    font-size: 2vw;
     text-transform: uppercase;
 }
 
@@ -62,6 +74,7 @@ em {
 #nav-menu li {
     margin: 2em;
 }
+*/
 
 /*
 header h1, #paw {
@@ -72,7 +85,7 @@ header h1, #paw {
 }
 */
 
-h2, p {
+/* h2, p {
     font-family: Sono, sans-serif;
     margin: 10px 10px;
     text-align: center;
@@ -85,7 +98,7 @@ p {
     color: whitesmoke;
     font-weight: 400;
     margin: 0 5px;
-}
+} */
 
 /*
 #nav-menu, #logo, #paw {
@@ -104,27 +117,77 @@ p {
 }
 */
 
-#flex-column {
+/*
+#rehome-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 15px;
     background-color: whitesmoke;
 }
+*/
 
-#flex-column > div {
+#rehome-section {
+    background-color: whitesmoke;
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*
+
+.rehome-box {
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
-.index-column {
-    flex-grow: 1;
+/* .rehome-photo {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: chocolate;
 }
+*/
+
+.rehome-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#dog-rehome {
+    height: 200px;
+    width: auto;
+    background: url("../images/dog-big-eyes.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#cat-rehome {
+    height: 200px;
+    width: auto;
+    background: url('../images/cat-looks-up.jpg') no-repeat;
+    background-size: cover;
+}
+
+#other-rehome {
+    height: 200px;
+    width: auto;
+    background: url('../images/guinea-big-orange.jpg') no-repeat;
+    background-size: cover;
+}
+
+
+/*.rehome-box {
+    flex-grow: 1;
+}*/
 
 #help-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 10px;
     margin-left: 10px;
     margin-right: 10px;
     background-color: whitesmoke;
@@ -153,13 +216,7 @@ p {
 
 /* Styling for hovering over navigation menu options with mouse */
 
-#nav-menu a:hover {
-    border-bottom: 1px solid #EF8C00;
-}
 
-.active {
-    border-bottom: 1px solid #EF8C00;
-}
 
 footer {
     display: flex;
@@ -269,11 +326,6 @@ footer div {
     padding: 0 10px;
 }
 
-.rehome-choices {
-    float: left;
-    width: 33%;
-    padding: 0 10px;
-}
 
 .index-column {
     float: left;
@@ -286,6 +338,8 @@ footer div {
     float: left;
     width: 33.33%;
 } */
+
+/*
 
 .row, .pet-row, .events-row {
     margin: 0 -5px;
@@ -306,7 +360,9 @@ footer div {
     }
 }
 
-.card-photo, .pet-photo, .rehome-photo {
+*/
+
+.card-photo, .pet-photo {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     height: 250px;
@@ -369,23 +425,7 @@ footer div {
     width: 20px;
 }
 
-#dog-rehome {
-    background: url("../images/dog-big-eyes.jpg") no-repeat top/110%;
-    height: 200px;
-    background-size: cover;
-}
 
-#cat-rehome {
-    background: url('../images/cat-looks-up.jpg') no-repeat center/105%;
-    height: 200px;
-    background-size: cover;
-}
-
-#other-rehome {
-    background: url('../images/guinea-big-orange.jpg') no-repeat bottom/110%;
-    height: 200px;
-    background-size: cover;
-}
 
 #manager {
     background-image: url("../images/stephanie-stepwell.jpg");
@@ -431,7 +471,7 @@ footer div {
     overflow: auto;
 }
 
-.rehome-blurb {
+/*.rehome-blurb {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     height: 200px;
     padding: 16px;
@@ -441,7 +481,7 @@ footer div {
     color: whitesmoke;
     text-size-adjust: auto;
 }
-
+*/
 
 /* Long term resident section styling */
 #terry {
