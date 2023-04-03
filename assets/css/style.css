@@ -31,6 +31,7 @@ h1 {
     word-spacing: 2px;
     line-height: 4px;
     letter-spacing: 5px;
+    color: whitesmoke;
 }
 
 .header1 {grid-area: header;
@@ -54,9 +55,13 @@ h1 {
 }
 .main1 {grid-area: main-top;
     font-weight: 400;
+    text-align: center;
+    padding-right: 2px;
 }
 .main2 {grid-area: main-bottom;
     font-weight: 400;
+    text-align: center;
+    padding-right: 2px;
 }
 .centerpiece {grid-area: right;
     background: url("../images/cat-looks-up.jpg") no-repeat center;
@@ -67,14 +72,15 @@ h1 {
     opacity: 0.4;
 }
 .footer1 {grid-area: left-footer;
-    display: flex;
     border-top: 2px solid #b300b3;
+    padding: 2px 5px;
 }
 .footer2 {grid-area: middle-footer;
     border-top: 2px solid #b300b3;
 }
 .footer3 {grid-area: right-footer;
     border-top: 2px solid #b300b3;
+    display: flex;
 }
 
 .grid-container {
@@ -100,7 +106,6 @@ h1 {
     color: black;
     padding: 5px 5px;
     overflow: auto;
-    text-align: left;
 }
 
 a, .nav1 > ul {
@@ -118,18 +123,34 @@ a, .nav1 > ul {
     font-size: 1.2vw;
 }
 
-.footer1 > ul {
+.footer3 > ul {
     display: flex;
     flex-direction: row;
     text-decoration: none;
     line-height: 3px;
     gap: 3px;
-    text-align: center;
+    text-align: right;
     list-style-type: none;
     margin: 2%;
     padding: 5% 5%;
-    color: #b300b3;
+    color: lavender;
     font-size: 1.1vw;
+}
+
+.social-networks i {
+    font-size: 120%;
+    margin: 10%;
+    padding: 10%;
+    width: 2.5vw;
+    color: plum;
+}
+
+.footer2 {
+    text-align: center;
+}
+
+.footer1 {
+    text-align: center;
 }
 
 .nav1 > a:hover {
@@ -139,6 +160,8 @@ a, .nav1 > ul {
 .active {
     border-bottom: 1px solid mediumpurple;
 }
+
+
 
 /* Set general rules for all sections */
 
