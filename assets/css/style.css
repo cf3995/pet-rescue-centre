@@ -14,7 +14,7 @@ html {
 
 body {
     font-family: Sono, sans-serif;
-    background-color: slategrey;
+    background-color: #ffe6ea;
     font-weight: 400;
     height: 100%;
     font-size: 1vw;
@@ -33,23 +33,49 @@ h1 {
     letter-spacing: 5px;
 }
 
-.item1 {grid-area: header;}
-.item2 {grid-area: top-right;}
-.events {grid-area: left;}
-.event1 {grid-area: events-left1}
-.event2 {grid-area: events-left2;}
-.event3 {grid-area: events-left3;}
-.event4 {grid-area: events-left4;}
-.event5 {grid-area: events-left5;}
-.main1 {grid-area: main-left;}
-.main2 {grid-area: main-right;}
-.banner1 {grid-area: left-footer;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.header1 {grid-area: header;
+    border-bottom: 2px solid #b300b3;
+    background: url("../images/cool-background.png") no-repeat center;
+    background-size: cover;
 }
-.banner2 {grid-area: middle-footer;}
-.banner3 {grid-area: right-footer;}
+.nav1 {grid-area: top-right;
+    background: url("../images/cool-background.png") repeat;
+    background-size: cover;
+    font-size: 400;
+}
+.event1 {grid-area: events-left1;
+    background-color: lavender;
+}
+.event2 {grid-area: events-left2;
+    background-color: plum;
+}
+.event3 {grid-area: events-left3;
+    background-color: orchid;
+}
+.main1 {grid-area: main-top;
+    font-weight: 400;
+}
+.main2 {grid-area: main-bottom;
+    font-weight: 400;
+}
+.centerpiece {grid-area: right;
+    background: url("../images/cat-looks-up.jpg") no-repeat center;
+    background-position: 50% 50%;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20% 0 0;
+    opacity: 0.4;
+}
+.footer1 {grid-area: left-footer;
+    display: flex;
+    border-top: 2px solid #b300b3;
+}
+.footer2 {grid-area: middle-footer;
+    border-top: 2px solid #b300b3;
+}
+.footer3 {grid-area: right-footer;
+    border-top: 2px solid #b300b3;
+}
 
 .grid-container {
     height: 100%;
@@ -57,29 +83,27 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr;
     grid-template-areas: 
     'header header header header header top-right'
-    'left left main-left main-right . top-right'
-    'events-left1 events-left1 main-left main-right . top-right'
-    'events-left2 events-left2 main-left main-right . top-right'
-    'events-left3 events-left3 main-left main-right . top-right'
-    'events-left4 events-left4 main-left main-right . top-right'
-    'events-left5 events-left5 left-footer left-footer middle-footer right-footer';
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    'events-left1 events-left1 main-top main-top right top-right'
+    'events-left1 events-left1 main-top main-top right top-right'
+    'events-left2 events-left2 main-top main-top right top-right'
+    'events-left2 events-left2 main-bottom main-bottom right top-right'
+    'events-left3 events-left3 main-bottom main-bottom right top-right'
+    'events-left3 events-left3 left-footer middle-footer middle-footer right-footer';
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
     padding: 5px;
-    background-color: slategrey;
-    background-size: cover;
+    background-color: whitesmoke;
 }
 
-.grid-container > div {
-    background-color: lightblue;
+.main1, .main2 {
+    background-color: whitesmoke;
     margin: 0;
     color: black;
     padding: 5px 5px;
-    opacity: 0.6;
     overflow: auto;
-    text-align: center;
+    text-align: left;
 }
 
-a, .item2 > ul {
+a, .nav1 > ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,11 +114,11 @@ a, .item2 > ul {
     list-style-type: none;
     margin: 2%;
     padding: 2%;
-    color: magenta;
+    color: #b300b3;
     font-size: 1.2vw;
 }
 
-.banner1 > ul {
+.footer1 > ul {
     display: flex;
     flex-direction: row;
     text-decoration: none;
@@ -104,11 +128,11 @@ a, .item2 > ul {
     list-style-type: none;
     margin: 2%;
     padding: 5% 5%;
-    color: magenta;
+    color: #b300b3;
     font-size: 1.1vw;
 }
 
-a:hover {
+.nav1 > a:hover {
     border-bottom: 1px solid mediumpurple;
 }
 
