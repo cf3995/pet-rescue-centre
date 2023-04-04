@@ -17,7 +17,6 @@ body {
     font-family: Sono, sans-serif;
     background-color: #ffe6ea;
     font-weight: 400;
-    height: 100%;
     font-size: 1vw;
 }
 
@@ -128,19 +127,25 @@ h1 {
 .grid-container {
     height: 100%;
     display: grid;
-    grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 2fr 2fr;
+    grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    'header header header header header header header top-right'
-    'side-bar-left events-left1 events-left1 main-top main-top main-top right top-right'
-    'side-bar-left events-left1 events-left1 main-top main-top main-top right top-right'
-    'side-bar-left events-left1 events-left1 main-top main-top main-top right top-right'
-    'side-bar-left events-left2 events-left2 main-top main-top main-top right top-right'
-    'side-bar-left events-left2 events-left2 main-bottom main-bottom main-bottom right top-right'
-    'side-bar-left events-left2 events-left2 main-bottom main-bottom main-bottom right top-right'
-    'side-bar-left events-left3 events-left3 main-bottom main-bottom main-bottom right top-right'
-    'side-bar-left events-left3 events-left3 main-bottom main-bottom main-bottom right top-right'
-    'side-bar-left events-left3 events-left3 left-footer left-footer middle-footer middle-footer right-footer';
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    'header header header header header header top-right'
+    'side-bar-left events-left1 main-top main-top main-top main-top top-right'
+    'side-bar-left events-left1 main-top main-top main-top main-top top-right'
+    'side-bar-left events-left1 main-top main-top main-top main-top top-right'
+    'side-bar-left events-left1 main-top main-top main-top main-top top-right'
+    'side-bar-left events-left1 main-top main-top main-top main-top top-right'
+    'side-bar-left events-left2 main-top main-top main-top main-top top-right'
+    'side-bar-left events-left2 main-top main-top main-top main-top top-right'
+    'side-bar-left events-left2 main-bottom main-bottom main-bottom right top-right'
+    'side-bar-left events-left2 main-bottom main-bottom main-bottom right top-right'
+    'side-bar-left events-left2 main-bottom main-bottom main-bottom right top-right'
+    'side-bar-left events-left3 main-bottom main-bottom main-bottom right top-right'
+    'side-bar-left events-left3 main-bottom main-bottom main-bottom right top-right'
+    'side-bar-left events-left3 main-bottom main-bottom main-bottom right top-right'
+    'side-bar-left events-left3 main-bottom main-bottom main-bottom right top-right'
+    'side-bar-left events-left3 left-footer left-footer middle-footer middle-footer right-footer';
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     padding: 5px;
     background-color: #99b3ff;
 }
@@ -165,7 +170,6 @@ h1 {
     margin-bottom: 8px;
     color: white;
     text-shadow: 2px 2px black;
-    text-decoration: underline;
     font-weight: 300;
     text-align: center;
     padding-right: 2px;
@@ -270,4 +274,38 @@ input[type=textarea] {
     margin: 4px 0;
     border: none;
     border-radius: 4px;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+table {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+tfoot {
+    height: 8vw;
+}
+
+thead, tbody {
+    text-align: center;
+}
+
+thead {
+    background-color: #4d88ff;
+    color: white;
+}
+
+#derek-daley-photo {
+    background: url("../images/derek-daley.jpg") no-repeat center;
+    background-position: 50% 50%;
+    background-size: contain;
 }
