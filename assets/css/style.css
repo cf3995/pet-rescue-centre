@@ -172,7 +172,7 @@ h1 {
     margin-top: 10px;
 }
 
-.main1 > p, .main2 > p, .main1 > h3 {
+.main1 > p, .main2 > p, .main1 > h3, .main2 > h4 {
     text-align: center;
     margin-top: 20px;
 }

@@ -12,82 +12,104 @@
 </head>
 <body>
 
-    <header>
-        <div>
+    <!-- Grid container holds all div elements -->
+
+    <div class="grid-container">
+
+        <!-- Header contains website heading -->
+
+        <div class="header1">
             <a href="index.html">
                 <h1><em>Pet</em> Rescue Centre</h1>
             </a>
         </div>
-        <div>
-            <nav>
-                <ul id="nav-menu">
-                    <li>
-                        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-                    </li>
-                    <li>
-                        <a href="rehoming.html" class="active"><i class="fa-solid fa-info"></i> Rehoming</a>
-                    </li>
-                    <li>
-                        <a href="team.html"><i class="fa-solid fa-star"></i> Meet the team</a>
-                    </li>
-                    <li>
-                        <a href="contact.html"><i class="fa-solid fa-address-card"></i> Contact</a>
-                    </li>
-                </ul>
-                <br>
-            </nav>
+
+        <!-- Navigation bar with links to main website pages -->
+
+        <div class="nav1">
+            <ul>
+                <li>
+                    <a href="index.html" aria-label="Jump to the Home page">Home</a>
+                </li>
+                <li>
+                    <a href="rehoming.html"  class="active" aria-label="Jump to the Rehoming page">Rehome</a>
+                </li>
+                <li>
+                    <a href="team.html" aria-label="Jump to the Team page">Our Team</a>
+                </li>
+                <li>
+                    <a href="contact.html" aria-label="Jump to the Contact page">Contact</a>
+                </li>
+            </ul>
         </div>
 
-        <section id="rehome-section">
+        <!-- Event panels with details of weekly events -->
 
-            <div>
-                <div class="rehome-box">
-                    <div id="dog-rehome">
-                    </div>
-                    <div class="rehome-blurb">          
-                        <a href="#">
-                            <h3>Dogs</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div>
-                <div class="rehome-box">
-                    <div id="sleeping-cat">
-    
-                    </div>
-                </div>
-            </div>
-    
-            <div>
-                <div class="rehome-box">
-                    <div id="cat-rehome"> 
-                    </div>        
-                    <div class="rehome-blurb">        
-                        <a href="#">
-                            <h3>Cats</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-    
-        
-        </section>
-    
+        <div class="events">
+            <h3>Weekly events</h3>
+        </div>
 
-    <footer>
-        <div>
-            <h3><em>Contact info</em></h3>
-            <p>Pet Rescue Centre</p>
+        <div class="event1">
+            <h3>Wednesday Visits</h3>
+            <details>
+                <p>We offer cuddle therapy sessions with our friendly permanent residents</p>
+                <br>
+                <p>Every Wednesday</p>
+                <p>Pet Rescue Centre</p>
+                <p>11:00</p>
+            </details>
+        </div>
+
+        <div class="event2">
+            <h3>Friday Karaoke</h3>
+            <details>
+                <p>Come along and take part in our weekly karaoke sessions</p>
+                <br>
+                <p>Friday nights</p>
+                <p>Pet Palace</p>
+                <p>19:00</p>
+            </details>
+        </div>
+
+        <div class="event3">
+            <h3>Saturday Sessions</h3>
+            <details>
+                <p>Come and meet some of the animals looking for new homes</p>
+                <br>
+                <p>Saturday mornings</p>
+                <p>Pet Rescue Kennels</p>
+                <p>11:00</p>
+            </details>
+        </div>
+
+        <!-- Main sections have information about the Pet Rescue Centre -->
+
+        <div class="main1">
+            <h2>How we got started</h2>
+            <p>Many years ago, a stray Alsation puppy arrived on our doorstep. We couldn't find anybody that owned the poor little guy so we took him in and called him Catch. Ever since that day, we've have been collecting dogs and cats that need our help.</p>
+        </div>
+
+        <div class="main2">
+            <h2>Our Services</h2>
+            <p>Not only do we rescue animals, we also offer a rehoming service, Veterinary care and charity events. We're proud to run our pet rescue centre and thank you all for your support.</p>
+        </div>
+
+        <!-- Centerpiece displays an image -->
+
+        <div class="centerpiece">
+
+        </div>
+
+        <!-- Three footer elements display address, social network links and charity information -->
+
+        <div class="footer1">
+            <h3>Pet Rescue Centre</h3>
             <p>The Strand</p>
             <p>Wexford</p>
             <p>Ireland</p>
-        </div>
+        </div>  
 
-        <div>
-            <h3><em>Follow us</em></h3>
-            <p></p>
+        <div class="footer2">
             <ul class="social-networks">
                 <li>
                     <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
@@ -102,16 +124,18 @@
                     <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
                 </li>
             </ul>
+            </p>
         </div>
 
-        <div>
-            <h3><em>Charity information</em></h3>
-            <p>Registered address: Pet Rescue Centre</p>
+        <div class="footer3">
+            <h3>Charity information</h3>
             <p>Registered number: 67392647</p>
+            <p>
         </div>
-    </footer>
 
-    <!-- font awesome script -->
+    </div>
+
+    <!-- font awesome script allows social media icons to display in footer -->
     <script src="https://kit.fontawesome.com/c76d329e35.js" crossorigin="anonymous"></script>
 </body>
 </html>
