@@ -50,12 +50,18 @@ h1 {
     font-size: 400;
     font-weight: 500;
 }
+.events {grid-area: side-bar-left;
+    writing-mode: vertical-lr;
+    transform: scale(-1);
+    text-align: center;
+}
 .event1 {grid-area: events-left1;
     background-color: lavender;
     font-weight: 400;
     text-align: center;
     padding-left: 2px;
     margin-left: 2px;
+    border-left: 2px solid #b300b3;
 }
 
 .event2 {grid-area: events-left2;
@@ -64,6 +70,7 @@ h1 {
     text-align: center;
     padding-left: 2px;
     margin-left: 2px;
+    border-left: 2px solid #b300b3;
 }
 
 .event3 {grid-area: events-left3;
@@ -72,6 +79,7 @@ h1 {
     text-align: center;
     padding-left: 2px;
     margin-left: 2px;
+    border-left: 2px solid #b300b3;
 }
 
 .event1 > details > summary > h3, .event2 > details > summary > h3, .event3 > details > summary > h3 {
@@ -120,18 +128,18 @@ h1 {
 .grid-container {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 2fr;
+    grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 2fr 2fr;
     grid-template-areas: 
-    'header header header header header header top-right'
-    'events-left1 events-left1 main-top main-top main-top right top-right'
-    'events-left1 events-left1 main-top main-top main-top right top-right'
-    'events-left1 events-left1 main-top main-top main-top right top-right'
-    'events-left2 events-left2 main-top main-top main-top right top-right'
-    'events-left2 events-left2 main-bottom main-bottom main-bottom right top-right'
-    'events-left2 events-left2 main-bottom main-bottom main-bottom right top-right'
-    'events-left3 events-left3 main-bottom main-bottom main-bottom right top-right'
-    'events-left3 events-left3 main-bottom main-bottom main-bottom right top-right'
-    'events-left3 events-left3 left-footer left-footer middle-footer middle-footer right-footer';
+    'header header header header header header header top-right'
+    'side-bar-left events-left1 events-left1 main-top main-top main-top right top-right'
+    'side-bar-left events-left1 events-left1 main-top main-top main-top right top-right'
+    'side-bar-left events-left1 events-left1 main-top main-top main-top right top-right'
+    'side-bar-left events-left2 events-left2 main-top main-top main-top right top-right'
+    'side-bar-left events-left2 events-left2 main-bottom main-bottom main-bottom right top-right'
+    'side-bar-left events-left2 events-left2 main-bottom main-bottom main-bottom right top-right'
+    'side-bar-left events-left3 events-left3 main-bottom main-bottom main-bottom right top-right'
+    'side-bar-left events-left3 events-left3 main-bottom main-bottom main-bottom right top-right'
+    'side-bar-left events-left3 events-left3 left-footer left-footer middle-footer middle-footer right-footer';
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     padding: 5px;
     background-color: #99b3ff;
