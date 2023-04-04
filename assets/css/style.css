@@ -31,7 +31,7 @@ h1 {
     word-spacing: 2px;
     line-height: 4px;
     letter-spacing: 5px;
-    color: whitesmoke;
+    color: white;
 }
 
 .header1 {grid-area: header;
@@ -43,16 +43,33 @@ h1 {
     background: url("../images/cool-background.png") repeat;
     background-size: cover;
     font-size: 400;
+    font-weight: 500;
 }
 .event1 {grid-area: events-left1;
     background-color: lavender;
+    font-weight: 400;
+    text-align: center;
+    padding-left: 2px;
 }
+
 .event2 {grid-area: events-left2;
     background-color: plum;
+    font-weight: 400;
+    text-align: center;
+    padding-left: 2px;
 }
+
 .event3 {grid-area: events-left3;
     background-color: orchid;
+    font-weight: 400;
+    text-align: center;
+    padding-left: 2px;
 }
+
+.event1 > h2, .event2 > h2, .event3 > h2 {
+    text-decoration: underline;
+}
+
 .main1 {grid-area: main-top;
     font-weight: 400;
     text-align: center;
@@ -69,46 +86,68 @@ h1 {
     background-size: cover;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 20% 0 0;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 .footer1 {grid-area: left-footer;
     border-top: 2px solid #b300b3;
-    padding: 2px 5px;
+    text-align: center;
+    font-weight: bold;
 }
 .footer2 {grid-area: middle-footer;
     border-top: 2px solid #b300b3;
+    display: flex;
+    justify-content: space-evenly;
 }
 .footer3 {grid-area: right-footer;
     border-top: 2px solid #b300b3;
-    display: flex;
+    padding: 2px 5px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .grid-container {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 2fr;
     grid-template-areas: 
-    'header header header header header top-right'
-    'events-left1 events-left1 main-top main-top right top-right'
-    'events-left1 events-left1 main-top main-top right top-right'
-    'events-left2 events-left2 main-top main-top right top-right'
-    'events-left2 events-left2 main-bottom main-bottom right top-right'
-    'events-left3 events-left3 main-bottom main-bottom right top-right'
-    'events-left3 events-left3 left-footer middle-footer middle-footer right-footer';
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    'header header header header header header top-right'
+    'events-left1 events-left1 main-top main-top main-top right top-right'
+    'events-left1 events-left1 main-top main-top main-top right top-right'
+    'events-left1 events-left1 main-top main-top main-top right top-right'
+    'events-left2 events-left2 main-top main-top main-top right top-right'
+    'events-left2 events-left2 main-bottom main-bottom main-bottom right top-right'
+    'events-left2 events-left2 main-bottom main-bottom main-bottom right top-right'
+    'events-left3 events-left3 main-bottom main-bottom main-bottom right top-right'
+    'events-left3 events-left3 main-bottom main-bottom main-bottom right top-right'
+    'events-left3 events-left3 left-footer left-footer middle-footer middle-footer right-footer';
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     padding: 5px;
-    background-color: whitesmoke;
+    background-color: #99b3ff;
 }
 
 .main1, .main2 {
-    background-color: whitesmoke;
+    background-color: #99b3ff;
     margin: 0;
     color: black;
     padding: 5px 5px;
     overflow: auto;
+    font-size: 1vw;
+    line-height: 20px;
+    letter-spacing: 3px;
+    font-weight: 600;
 }
 
-a, .nav1 > ul {
+.main1 > h2, .main2 > h2 {
+    font-family: Pacifico, sans-serif;
+    line-height: 20px;
+    margin-bottom: 4px;
+    color: white;
+    text-shadow: 2px 2px black;
+    text-decoration: underline;
+    font-weight: 300;
+}
+
+.header1 > a, .nav1 > ul, a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,39 +160,31 @@ a, .nav1 > ul {
     padding: 2%;
     color: #b300b3;
     font-size: 1.2vw;
+    font-weight: bold;
 }
 
-.footer3 > ul {
+.footer2 > ul {
     display: flex;
     flex-direction: row;
     text-decoration: none;
     line-height: 3px;
-    gap: 3px;
-    text-align: right;
+    margin-top: 5px;
+    gap: 2px;
+    text-align: left;
     list-style-type: none;
-    margin: 2%;
-    padding: 5% 5%;
-    color: lavender;
     font-size: 1.1vw;
 }
 
 .social-networks i {
     font-size: 120%;
-    margin: 10%;
-    padding: 10%;
+    margin-right: 3px;
+    padding-right: 3px;
+    align-items: left;
     width: 2.5vw;
-    color: plum;
+    color: black;
 }
 
-.footer2 {
-    text-align: center;
-}
-
-.footer1 {
-    text-align: center;
-}
-
-.nav1 > a:hover {
+.nav1 > ul > li > a:hover {
     border-bottom: 1px solid mediumpurple;
 }
 
