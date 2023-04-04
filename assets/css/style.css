@@ -55,6 +55,7 @@ h1 {
     font-weight: 400;
     text-align: center;
     padding-left: 2px;
+    margin-left: 2px;
 }
 
 .event2 {grid-area: events-left2;
@@ -62,6 +63,7 @@ h1 {
     font-weight: 400;
     text-align: center;
     padding-left: 2px;
+    margin-left: 2px;
 }
 
 .event3 {grid-area: events-left3;
@@ -69,23 +71,18 @@ h1 {
     font-weight: 400;
     text-align: center;
     padding-left: 2px;
+    margin-left: 2px;
 }
 
-.event1 > h2, .event2 > h2, .event3 > h2 {
+.event1 > details > summary > h3, .event2 > details > summary > h3, .event3 > details > summary > h3 {
     text-decoration: underline;
 }
 
 /* Styling for main middle sections */
 
 .main1 {grid-area: main-top;
-    font-weight: 400;
-    text-align: center;
-    padding-right: 2px;
 }
 .main2 {grid-area: main-bottom;
-    font-weight: 400;
-    text-align: center;
-    padding-right: 2px;
 }
 
 /* Styling for image in center-right of page */
@@ -162,6 +159,13 @@ h1 {
     text-shadow: 2px 2px black;
     text-decoration: underline;
     font-weight: 300;
+    text-align: center;
+    padding-right: 2px;
+}
+
+.main1 > p, .main2 > p {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .header1 > a, .nav1 > ul, a {
